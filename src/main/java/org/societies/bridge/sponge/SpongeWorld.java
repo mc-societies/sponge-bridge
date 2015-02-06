@@ -13,7 +13,9 @@ public class SpongeWorld implements World {
 
     private final org.spongepowered.api.world.World world;
 
-    public SpongeWorld(org.spongepowered.api.world.World world) {this.world = world;}
+    public SpongeWorld(org.spongepowered.api.world.World world) {
+        this.world = world;
+    }
 
     @Override
     public void dropItem(Location location, ItemStack itemStack) {
