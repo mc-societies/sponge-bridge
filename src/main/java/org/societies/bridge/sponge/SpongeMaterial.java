@@ -1,16 +1,16 @@
 package org.societies.bridge.sponge;
 
 import org.societies.bridge.Material;
-import org.spongepowered.api.item.Item;
+import org.spongepowered.api.item.ItemType;
 
 /**
  * Represents a BukkitMaterial
  */
 public class SpongeMaterial implements Material {
 
-    private final Item item;
+    private final ItemType item;
 
-    public SpongeMaterial(Item item) {this.item = item;}
+    public SpongeMaterial(ItemType item) {this.item = item;}
 
     @SuppressWarnings("deprecation")
     @Override
@@ -20,12 +20,12 @@ public class SpongeMaterial implements Material {
 
     @Override
     public String getName() {
-        return item.toString();
+        return item.getId();
     }
 
     @Override
     public String getInternalName() {
-        return item.toString();
+        return item.getId();
     }
 
     @Override

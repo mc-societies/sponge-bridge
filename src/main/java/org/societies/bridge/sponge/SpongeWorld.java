@@ -24,7 +24,7 @@ public class SpongeWorld implements World {
 
     @Override
     public UUID getUUID() {
-        return world.getUniqueID();
+        return world.getUniqueId();
     }
 
     @Override
