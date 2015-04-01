@@ -10,7 +10,9 @@ public class SpongeMaterial implements Material {
 
     private final ItemType item;
 
-    public SpongeMaterial(ItemType item) {this.item = item;}
+    public SpongeMaterial(ItemType item) {
+        this.item = item;
+    }
 
     @SuppressWarnings("deprecation")
     @Override
